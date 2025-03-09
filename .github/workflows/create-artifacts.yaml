@@ -13,11 +13,11 @@ jobs:
     steps:
     # Step 1: Checkout the repository
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     # Step 2: Set up Python
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
         python-version: "3.9"  # Specify the Python version
 
@@ -34,7 +34,7 @@ jobs:
 
     # Step 5: Upload artifacts
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: python-artifacts
         path: dist/  # Path to the build artifacts
