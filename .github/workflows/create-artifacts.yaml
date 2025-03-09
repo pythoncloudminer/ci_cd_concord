@@ -34,7 +34,7 @@ jobs:
 
     # Step 5: Upload artifacts
     - name: Upload artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: python-artifacts
         path: dist/  # Path to the build artifacts
